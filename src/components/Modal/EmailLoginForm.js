@@ -7,8 +7,8 @@ import { auth } from "../../firebase";
 import { createOrUpdateUser } from "../../authFunctions/auth";
 
 const EmailLoginForm = ({ history }) => {
-  const [email, setEmail] = useState("nemph1s.k@gmail.com");
-  const [password, setPassword] = useState("tester");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const { user } = useSelector((state) => ({ ...state }));
