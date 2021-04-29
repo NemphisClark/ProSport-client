@@ -1,0 +1,22 @@
+.header-menu {
+  position: relative;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: #111;
+  }
+
+  &__ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__li {
+    line-height: 55px;
+    margin-right: 50px;
+  }
+}

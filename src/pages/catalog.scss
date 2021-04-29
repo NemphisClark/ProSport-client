@@ -1,0 +1,12 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  div a {
+    font-size: 14px;
+  }
+}
+
+.product-card__wrapper {
+  width: 20%;
+}

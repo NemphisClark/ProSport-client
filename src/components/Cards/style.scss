@@ -1,0 +1,407 @@
+// Product specifications
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    button {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-view__container {
+    display: flex;
+    justify-content: center;
+    max-width: 1430px;
+    width: 100%;
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      background: #eeeeee;
+      padding: 30px 10px 20px 10px;
+
+      &__img {
+        margin-right: 40px;
+        width: 50%;
+
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            margin: 0 20px 20px 0;
+            object-fit: none;
+            width: 258px;
+            height: 316px;
+          }
+        }
+      }
+
+      &__title {
+        font-size: 24px;
+        margin-bottom: 4px;
+      }
+
+      &__price {
+        font-size: 18px;
+        color: #772f2f;
+        margin-bottom: 20px;
+      }
+
+      &__material {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+
+      &__description {
+        font-size: 16px;
+        margin-bottom: 16px;
+        margin-top: 62px;
+
+        span {
+          color: #e44747;
+        }
+      }
+
+      &__size {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 62px;
+      }
+
+      &__sizes {
+        display: flex;
+        margin-top: 5px;
+
+        .size {
+          cursor: pointer;
+          background: #fff;
+          border: 2px solid #fff;
+          padding: 6px 12px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &-specifications {
+    margin-bottom: 80px;
+
+    &-item {
+      list-style: none;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.dark-btn__main {
+  margin-right: 11px;
+  background: #414141;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+.light-btn__main {
+  font-size: 16px;
+  border-radius: 0px;
+  background: #0e0e0e4d;
+  color: #fff;
+}
+
+.btn-download__wrapper {
+  position: absolute;
+  padding: 8px;
+  top: -34px;
+  right: -1px;
+  background-color: #ec6b6b;
+
+  a {
+    display: block;
+  }
+
+  &:hover {
+    background-color: #f14848;
+  }
+}
+
+.order {
+  &-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+    width: 100%;
+    margin-right: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px 0px #a8a8a8;
+  }
+
+  &-id {
+    margin-bottom: 5px;
+  }
+
+  &-amount {
+    margin-bottom: 5px;
+  }
+
+  &-date {
+    margin-bottom: 5px;
+  }
+
+  &-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.order .row {
+  flex-wrap: nowrap;
+}
+
+.slider img,
+.card-image {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #111 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #111 !important;
+}
+
+.carousel {
+  .slide {
+    background: none !important;
+  }
+
+  .control {
+    // Slider dots
+    &-dots .dot {
+      background: #111 !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  // 3.1 Slider img width
+  &-status {
+    font-size: 14px !important;
+    text-shadow: none !important;
+    color: #111 !important;
+  }
+
+  &-root {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    width: 400px !important;
+  }
+
+  .slide {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .products-container {
+    flex-flow: wrap;
+  }
+
+  .product {
+    &-card__wrapper {
+      width: 44%;
+    }
+
+    &-specifications {
+      margin-bottom: 50px;
+    }
+
+    &-view__container {
+      &-content {
+        flex-direction: column;
+
+        &__img {
+          display: flex;
+          justify-content: center;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.select-types {
+  position: relative;
+  width: 50px;
+}
+
+.select {
+  position: relative;
+  width: 230px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 6px;
+
+    background: #c7c7c7;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 48%;
+      right: 11px;
+
+      display: block;
+      width: 10px;
+      height: 2px;
+
+      transition: all 0.3s ease-out;
+
+      background-color: #333333;
+
+      transform: translate(-3px, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+      border-color: #d8093a;
+
+      &::before,
+      &::after {
+        background-color: #000;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+
+    flex-direction: column;
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-top: none;
+
+    transition: all 0.3s ease-out;
+
+    z-index: 10;
+
+    &-types {
+      cursor: pointer;
+      position: absolute;
+      flex-direction: column;
+      width: 100%;
+
+      background-color: #f1f1f1;
+      border-top: none;
+      border-right: 1px solid #a7a7a7;
+      border-left: 1px solid #a7a7a7;
+      border-bottom: 1px solid #a7a7a7;
+      transition: all 0.3s ease-out;
+
+      z-index: 10;
+
+      div {
+        cursor: pointer;
+
+        &:hover {
+          background: #d9d9d9;
+        }
+
+        label {
+          cursor: pointer;
+          display: block;
+          padding: 6px 17px;
+        }
+      }
+    }
+
+    div {
+      cursor: pointer;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+
+      label {
+        cursor: pointer;
+        display: block;
+        padding: 6px 17px;
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + label {
+      background-color: #dedede;
+    }
+    &:disabled + label {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding: 0 16px;
+    font-size: 14px;
+
+    transition: all 0.2s ease-out;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    & + input + & {
+      border-top: 0 solid #c7ccd160;
+    }
+
+    &:hover {
+      background-color: #ececec !important;
+    }
+  }
+}
+
+input.select-checkbox {
+  display: none;
+}

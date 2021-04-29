@@ -1,0 +1,369 @@
+#profile-fullname {
+  font-size: 20px;
+}
+
+#profile-address {
+  background: #e5e5e5;
+  border: 1px solid #d3d3d3;
+  padding: 1px 10px;
+  width: 333px;
+  margin: -40px 0 0 -40px;
+}
+
+#profile-cards {
+  background: #e5e5e5;
+  border: 1px solid #d3d3d3;
+  padding: 1px 10px;
+  width: 333px;
+  margin: -40px 0 0 -40px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 50px auto 150px auto;
+
+  background: #eeeeee;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8f8f8f;
+  }
+
+  &-info {
+    &__block {
+      width: 400px;
+      height: 120px;
+      margin-bottom: 40px;
+      background: #d6d6d6;
+
+      &-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background: #e5e5e5;
+      }
+
+      &-img {
+        width: 80px;
+        height: 80px;
+        background: rgb(170, 170, 170);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &-data {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-title {
+        color: #4d4d4d;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    padding: 20px 70px;
+    margin-bottom: 270px;
+
+    &__personal-data {
+      justify-content: space-between;
+      display: flex;
+    }
+
+    &__other {
+      margin-bottom: 400px;
+      display: flex;
+    }
+  }
+
+  &-header {
+    font-family: "Gerbera-Bold";
+    font-size: 1.7rem;
+    line-height: 1.1;
+    color: #989898;
+
+    &__dark {
+      color: #333333;
+      font-family: "Gerbera-Bold";
+      font-size: 1.7rem;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    &-other {
+      font-family: "Gerbera-Bold";
+      font-size: 1.7rem;
+      line-height: 1.1;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-contains {
+    display: flex;
+    flex-wrap: wrap;
+    width: 103.9%;
+  }
+
+  &-empty__msg {
+    margin-top: 10px;
+    color: #989898;
+    max-width: 410px;
+    font-size: 14px;
+
+    &-wishlist {
+      margin-top: 10px;
+      color: #989898;
+      font-size: 14px;
+      max-width: 500px;
+    }
+  }
+
+  &-info {
+    &__login {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    &__forms {
+      display: flex;
+
+      form {
+        margin-right: 5%;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.order {
+  &-wrapper {
+    &__col {
+      display: flex;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      border-left: 1px solid #b4b4b4;
+      padding-left: 20px;
+      margin-right: 20px;
+
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.profile-container__orders-empty {
+  background-image: url(../../images/online-shop.svg);
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: right 20% top -20px;
+  margin-top: -40px;
+  min-width: 85%;
+  min-height: -webkit-calc(100vh - 162px);
+  min-height: calc(100vh - 162px);
+}
+
+.active {
+  color: #e44747 !important;
+}
+
+.wishlist-card {
+  margin-top: 20px;
+
+  &__remove {
+    margin-top: -73px;
+    margin-left: 100px;
+  }
+
+  &__cart {
+    cursor: pointer;
+    font-size: 18px;
+    background: #4e000060;
+    margin: 5px 15px 0 15px;
+    padding: 2px 15px;
+    width: 120px;
+  }
+}
+
+.footer-wrapper {
+  margin-top: 0;
+}
+
+.form-group {
+  .btn-width {
+    cursor: pointer;
+    width: 100%;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.form-control {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #000;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #111;
+    outline: 0;
+  }
+}
+
+/* The checkbox checkbox-container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #111;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-checkbox-container input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #333;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1441px) {
+  .profile-container__orders-empty {
+    background-size: auto 60%;
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  .profile-container__orders-empty {
+    background-size: auto 50%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .profile-container__orders-empty {
+    background-size: auto 40%;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .profile-container {
+    margin-bottom: 60%;
+    flex-direction: column;
+
+    &-content {
+      margin-top: 40px;
+
+      &__personal-data {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .profile-container__orders-empty {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.header-menu__categories {
+  display: flex;
+  justify-content: space-evenly;
+  width: 66%;
+}
+
+.header-menu__category {
+  height: 50px;
+
+  &:hover {
+    .header-menu__category-sub {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: #111 1px solid;
+      padding: 30px 0 30px 0;
+      z-index: 100;
+    }
+  }
+
+  &-sub {
+    display: none;
+  }
+}
+
+.subs-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 100%;
+
+  div {
+    a {
+      display: block;
+    }
+  }
+}
+
+.parent-subs-wrapper {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+
+  &__main {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}

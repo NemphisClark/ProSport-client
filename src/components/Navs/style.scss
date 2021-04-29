@@ -1,0 +1,41 @@
+.user-nav {
+  width: 100%;
+  position: relative;
+  padding-right: 400px;
+  font-size: 1rem;
+
+  ul {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.admin-nav {
+  width: 100%;
+  position: relative;
+  font-size: 1rem;
+
+  ul {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.user-link {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  line-height: 1.2;
+
+  a {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 15px;
+    color: #333;
+    border-bottom: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
