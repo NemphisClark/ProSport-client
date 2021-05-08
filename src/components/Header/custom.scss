@@ -131,10 +131,13 @@
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1366px) {
   .header {
     &-inner {
-      padding: 0 50px;
+      padding: 0 140px;
+    }
+    &-search {
+      width: 500px;
     }
   }
 }

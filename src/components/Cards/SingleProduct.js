@@ -145,14 +145,26 @@ const SingleProduct = ({ product }) => {
 
         <div>
           <div className="product-btns">
-            <button
-              style={{ marginRight: "11px", borderRadius: "0" }}
-              className="dark-btn__main"
-              onClick={handleAddToCart}
-              disabled={product.quantity < 1}
-            >
-              {product.quantity < 1 ? "Нет в наличии" : "Добавить в корзину"}
-            </button>
+            {user && user.token ? (
+              <button
+                style={{ marginRight: "11px", borderRadius: "0" }}
+                className="dark-btn__main"
+                onClick={handleAddToCart}
+                disabled={product.quantity < 1}
+              >
+                {product.quantity < 1 ? "Нет в наличии" : "Добавить в корзину"}
+              </button>
+            ) : (
+              <button
+                style={{ marginRight: "11px", borderRadius: "0" }}
+                className="dark-btn__main"
+                onClick={handleAddToCart}
+                disabled={product.quantity < 1}
+              >
+                Войдите в аккаунт
+              </button>
+            )}
+
             <button
               style={{ marginRight: "11px", borderRadius: "0" }}
               className="light-btn__main"
@@ -162,6 +174,12 @@ const SingleProduct = ({ product }) => {
             </button>
           </div>
         </div>
+
+        {user && user.token ? null : (
+          <p style={{ color: "#0e0e0e9d" }}>
+            Войдите в аккаунт, чтобы добавить товар в корзину и оформить заказ!
+          </p>
+        )}
 
         <div className="product-view__container-content__description">
           <span>Описание:</span> {description}

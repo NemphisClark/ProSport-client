@@ -76,7 +76,9 @@ const CartPaymentTab = () => {
               />
               <p>
                 <input type="radio" id="test1" name="radio-group" checked />
-                <label for="test1">{userCards}</label>
+                <label for="test1">
+                  {userCards ? userCards : "Карта не добавлена"}
+                </label>
               </p>
               <button
                 style={{ marginTop: "60px" }}

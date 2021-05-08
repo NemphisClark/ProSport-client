@@ -21,13 +21,13 @@ const RegisterComplete = ({ history }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // validation
-    if (!email || !password) {
-      toast.error("Email and password is required");
+    if (email.length < 1 || password.length < 6) {
+      toast.error("Введены некорректные данные!");
       return;
     }
 
     if (password.length < 6) {
-      toast.error("Password must be at least 6 characters long");
+      toast.error("Пароль короче 6 символов!");
       return;
     }
 

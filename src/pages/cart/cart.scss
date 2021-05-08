@@ -46,7 +46,7 @@
       background: #dbdbdb;
       height: 100%;
       margin-top: 12px;
-      padding: 10px 80px 10px 20px;
+      padding: 10px 60px 10px 20px;
 
       &-title {
         font-weight: 400;
@@ -77,12 +77,26 @@
 
   &-product {
     display: flex;
+    justify-content: space-between;
     height: 280px;
 
     background: #fff;
     padding: 10px;
     margin-left: 40px;
     margin-bottom: 20px;
+
+    &__img {
+      div {
+        img {
+          cursor: pointer;
+          max-width: 100%;
+          object-fit: none;
+          max-height: 100%;
+          height: 259px;
+          width: 212px;
+        }
+      }
+    }
 
     &__title {
       font-size: 22px;

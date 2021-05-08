@@ -136,7 +136,13 @@ const CartSteps = () => {
         <div className="basket-content__right-step__delivery">
           <div>Ежедневно 10.00 - 20.00</div>
           <div>
-            {userAddress} {userAddressHome}, {userAddressApartment}
+            {userAddress ? (
+              <div>
+                {userAddress} {userAddressHome}, {userAddressApartment}
+              </div>
+            ) : (
+              <div>Введите адрес и обновите страницу</div>
+            )}
           </div>
         </div>
       </div>
@@ -178,7 +184,9 @@ const CartSteps = () => {
           Заказать
         </button>
       ) : (
-        <button className="btn-dark">Войдите для оплаты</button>
+        <button className="btn-dark" style={{ margin: "20px auto 0 auto" }}>
+          Войдите для оплаты
+        </button>
       )}
 
       <SuccessfulModal active={modalActive} setActive={setModalActive} />

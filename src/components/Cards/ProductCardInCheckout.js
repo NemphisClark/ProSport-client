@@ -150,7 +150,9 @@ const ProductCardInCheckout = ({ p, isCheck, setIsCheck }) => {
 
       <div className="basket-product">
         {p.images.length ? (
-          <ModalImage small={p.images[0].url} large={p.images[0].url} />
+          <div className="basket-product__img">
+            <ModalImage small={p.images[0].url} large={p.images[0].url} />
+          </div>
         ) : (
           <ModalImage small={laptop} large={laptop} />
         )}
